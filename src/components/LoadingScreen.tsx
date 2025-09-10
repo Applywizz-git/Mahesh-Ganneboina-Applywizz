@@ -152,7 +152,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       >
         <div className="w-32 h-44 rounded-2xl overflow-hidden shadow-hero border-2 border-primary/20">
           <img
-            src="/src/assets/profile-pic.jpeg"
+            src="../../public/profile-pic.jpeg"
             alt="Mahesh Ganneboina"
             className="w-full h-full object-cover"
           />
