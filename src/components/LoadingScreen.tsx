@@ -134,31 +134,6 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* 3D Canvas */}
-      <div className="w-96 h-96 mb-8">
-        <Canvas camera={{ position: [0, 0, 6], fov: 50 }}>
-          <Suspense fallback={null}>
-            <LoadingScene />
-          </Suspense>
-        </Canvas>
-      </div>
-
-      {/* Profile Photo */}
-      <motion.div
-        className="mb-8 flex justify-center"
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.3 }}
-      >
-        <div className="w-32 h-44 rounded-2xl overflow-hidden shadow-hero border-2 border-primary/20">
-          <img
-            src="../../../public/profile-pic.jpeg"
-            alt="Mahesh Ganneboina"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </motion.div>
-
       {/* Loading Text */}
       <motion.div
         className="text-center mb-8"
